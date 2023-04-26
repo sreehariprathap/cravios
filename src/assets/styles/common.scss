@@ -1,0 +1,43 @@
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ffff;
+}
+body::-webkit-scrollbar-track {
+  background-color: $primary;
+}
+
+.app-input {
+  box-sizing: border-box;
+  font-family: 'Arvo', serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+
+  border: 2px solid #001429;
+  box-shadow: -1px 2px 0px #001429;
+  border-radius: 24px;
+
+  &:hover {
+    @apply transition duration-200;
+    box-shadow: -2px 4px 0px #001429;
+    border: 2px solid #001429;
+  }
+  &:focus {
+    @apply transition duration-200;
+    box-shadow: -2px 4px 0px #001429;
+    border: 2px solid #001429;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &::placeholder {
+    font-family: "Arvo", serif;
+  }
+}

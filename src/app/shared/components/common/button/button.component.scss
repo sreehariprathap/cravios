@@ -1,0 +1,35 @@
+@import "src/assets/styles/library.scss";
+
+.app-btn {
+  @apply font-bold;
+  box-sizing: border-box;
+  font-family: 'Arvo', serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 15px 5px 15px;
+
+  border: 2px solid #001429;
+  box-shadow: -1px 2px 0px #001429;
+  border-radius: 24px;
+
+  &:hover {
+    @apply transition duration-200;
+    box-shadow: -2px 4px 0px #001429;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  @apply bg-primary;
+}
+.secondary {
+  @apply bg-secondary;
+}
+.accent {
+  @apply bg-accent;
+}

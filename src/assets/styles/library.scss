@@ -1,0 +1,8 @@
+@import "palettes.scss";
+@import "common.scss";
+@import "components.scss";
+@import "texts.scss";
+@import "layouts.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
