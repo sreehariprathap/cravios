@@ -1,0 +1,35 @@
+<nav class="bg-slate-50 flex flex-col p-2 sticky top-0 navbar">
+  <div class="flex justify-between w-full">
+    <div class="menu-bar" (click)="toggleMenu()">
+      <fa-icon [icon]="faBars" class="fa-2x"></fa-icon>
+    </div>
+    <cravios-logo></cravios-logo>
+    <div class="btn btn-ghost" (click)="toggleCart()">
+      <fa-icon [icon]="faBagShopping" class="fa-2x"></fa-icon>
+    </div>
+  </div>
+  <ul
+    class="w-full transition duration-200 menu-dropdown"
+    *ngIf="isMenuVisible"
+  >
+    <li class="btn btn-ghost btn-wide">
+      <a href="">Trending</a>
+    </li>
+    <li class="btn btn-ghost btn-wide">
+      <a href="">New</a>
+    </li>
+    <li class="btn btn-ghost btn-wide">
+      <a href="">Best</a>
+    </li>
+    <li class="btn btn-ghost btn-wide">
+      <a href="">Profile</a>
+    </li>
+    <li class="btn btn-error hover:bg-error btn-wide">
+      <a href="">Logout</a>
+    </li>
+  </ul>
+  <div
+    class="cart-dropdown"
+    *ngIf="isCartVisible"
+  ></div>
+</nav>

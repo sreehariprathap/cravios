@@ -8,7 +8,6 @@ import {
   ViewChild,
 } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
-
 import {
   faPlus,
   faChevronRight,
@@ -16,7 +15,6 @@ import {
   faLocationDot,
   faBookmark,
 } from '@fortawesome/free-solid-svg-icons';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'cravios-button',

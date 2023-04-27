@@ -5,14 +5,14 @@ module.exports = {
       {
         mytheme: {
           primary: "#F30C59",
-          secondary: "#FFBB33",
+          secondary: "#FF5C5C",
           accent: "#5E1AE5",
           neutral: "#35363C",
           "base-100": "#F4F7FA",
-          info: "#1481B8",
+          info: "#3A86FF",
           success: "#0AC285",
           warning: "#F8AE1B",
-          error: "#E53E4F",
+          error: "#F30C59",
         },
       },
     ],

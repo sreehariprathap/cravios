@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "cravios",
+      "prefix": "candy",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

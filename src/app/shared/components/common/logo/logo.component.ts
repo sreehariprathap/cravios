@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./logo.component.scss'],
 })
 export class LogoComponent implements OnInit {
-  @Input() imageUrl: string = 'assets/images/cravios.png';
+  @Input() imageUrl: string = 'assets/images/candystore.png';
 
   constructor() {}
 
