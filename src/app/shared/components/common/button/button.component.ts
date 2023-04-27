@@ -1,6 +1,22 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Input,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
+
+import {
+  faPlus,
+  faChevronRight,
+  faCheck,
+  faLocationDot,
+  faBookmark,
+} from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'cravios-button',
@@ -12,15 +28,43 @@ import { SharedModule } from 'src/app/shared/shared.module';
 export class ButtonComponent implements OnInit {
   @Input() text!: string;
   @Input() isIcon?: boolean = false;
-  @Input() iconType!: string;
+  @Input() iconType!: any;
   @Input() color!: string;
 
   @ViewChild('button') button!: ElementRef;
 
+  faIcon: any;
+
   constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit() {
-    this.color ? this.renderer.addClass(this.button.nativeElement, this.color) : null
+    this.color
+      ? this.renderer.addClass(this.button.nativeElement, this.color)
+      : null;
   }
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+  }
+
+  assignButtonIcon(iconType: any) {
+    switch (iconType) {
+      case 'plus':
+        return faPlus;
+        break;
+      case 'right':
+        return faChevronRight;
+        break;
+      case 'check':
+        return faCheck;
+        break;
+      case 'location':
+        return faLocationDot;
+        break;
+      case 'bookmark':
+        return faBookmark;
+        break;
+      default:
+        return faChevronRight;
+    }
+  }
 }

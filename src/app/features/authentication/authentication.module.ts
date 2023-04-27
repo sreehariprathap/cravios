@@ -5,6 +5,7 @@ import { AuthenticationRoutingModule } from './authentication-routing.module';
 import { AuthenticationComponent } from './authentication.component';
 import { ButtonComponent } from 'src/app/shared/components/common/button/button.component';
 import { LogoComponent } from 'src/app/shared/components/common/logo/logo.component';
+import { CardComponent } from 'src/app/shared/components/common/card/card.component';
 
 @NgModule({
   declarations: [AuthenticationComponent],
@@ -13,6 +14,7 @@ import { LogoComponent } from 'src/app/shared/components/common/logo/logo.compon
     AuthenticationRoutingModule,
     ButtonComponent,
     LogoComponent,
+    CardComponent,
   ],
 })
 export class AuthenticationModule {}

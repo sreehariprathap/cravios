@@ -1,3 +1,8 @@
 <button class="app-btn" #button>
-  {{ text }}
+  <div class="flex gap-2">
+    {{ text }}
+    <span *ngIf="isIcon">
+      <fa-icon [icon]="assignButtonIcon(iconType)"></fa-icon>
+    </span>
+  </div>
 </button>

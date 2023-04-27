@@ -41,3 +41,16 @@ body::-webkit-scrollbar-track {
     font-family: "Arvo", serif;
   }
 }
+.app-input--error {
+  border-color: red;
+  box-shadow: none;
+  &:focus {
+    border-color: red;
+    box-shadow: none;
+  }
+  &:hover {
+    border-color: red;
+    box-shadow: none;
+  }
+}
+

@@ -4,13 +4,13 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#FF6D60",
-          secondary: "#F7D060",
-          accent: "#009FBD",
+          primary: "#F30C59",
+          secondary: "#FFBB33",
+          accent: "#5E1AE5",
           neutral: "#35363C",
           "base-100": "#F4F7FA",
-          info: "#210062",
-          success: "#24A897",
+          info: "#1481B8",
+          success: "#0AC285",
           warning: "#F8AE1B",
           error: "#E53E4F",
         },
@@ -31,7 +31,7 @@ module.exports = {
         "4xl": "2236px",
       },
       colors: {
-        main: "#210062"
+        main: "#5E1AE5"
       },
     },
   },
