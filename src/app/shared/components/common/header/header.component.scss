@@ -8,10 +8,12 @@
 }
 .menu-dropdown {
   margin-top: 1.2rem;
-  @apply flex xsm:flex-col lg:flex-row lg:justify-between;
+  margin-bottom: 1.2rem;
+  @apply flex xsm:flex-col xsm:gap-3 lg:flex-row lg:justify-between;
 }
 .cart-dropdown {
   margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   @apply flex xsm:flex-col lg:flex-row lg:justify-between;
 }
 .menu-bar {
