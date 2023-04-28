@@ -1,1 +1,203 @@
 @import "src/assets/styles/library.scss";
+.app-login {
+  @apply flex xsm:flex-col lg:flex-row justify-center items-center gap-5 min-h-[100vh] z-10 absolute xsm:top-[70%] lg:top-[50%];
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-comic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+
+  border: 2px solid #001429;
+  box-shadow: -1px 2px 0px #001429;
+  @apply rounded-lg p-2;
+
+  &:hover {
+    @apply transition duration-200;
+    box-shadow: -2px 4px 0px #001429;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.app-login-card {
+  @apply flex flex-col gap-5 p-10 bg-white;
+  font-family: "Arvo", serif;
+  border: 2px solid #001429;
+  box-shadow: -2px 4px 0px #001429;
+  border-radius: 24px;
+
+  &:hover {
+    @apply transition duration-200;
+    box-shadow: -4px 6px 0px #001429;
+  }
+  h1 {
+    font-size: xx-large;
+    font-weight: 700;
+    background: linear-gradient(
+      90deg,
+      rgba(243, 12, 89, 1) 0%,
+      rgba(255, 92, 92, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+    @apply cursor-pointer;
+  }
+  .create-ac {
+    background: linear-gradient(
+      90deg,
+      rgba(243, 12, 89, 1) 0%,
+      rgba(255, 92, 92, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+    @apply cursor-pointer;
+  }
+}
+.app-tagline {
+  font-family: "Arvo", serif;
+  font-size: xx-large;
+  font-weight: 700;
+  @apply cursor-pointer text-justify xsm:text-lg lg:text-3xl;
+}
+.app-tagline--color {
+  @apply xsm:text-lg lg:text-4xl;
+  background: linear-gradient(
+    90deg,
+    rgba(243, 12, 89, 1) 0%,
+    rgba(255, 92, 92, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.app-logo {
+  @apply flex flex-col justify-center lg:w-[35rem] p-5;
+}
+
+.area {
+  background: -webkit-linear-gradient(to left, #f30c59, #ff5c5c);
+  width: 100%;
+  // height:100%;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to left, #f30c59, #ff5c5c);
+  opacity: 0.1;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.5;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
