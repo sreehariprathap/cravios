@@ -1,6 +1,6 @@
 @import "src/assets/styles/library.scss";
 .app-login {
-  @apply flex xsm:flex-col lg:flex-row justify-center items-center gap-5 min-h-[100vh] z-10 absolute xsm:top-[70%] lg:top-[50%];
+  @apply flex xsm:flex-col lg:flex-row justify-center items-center xsm:gap-5 lg:gap-20 min-h-[100vh] z-10 absolute xsm:top-[70%] lg:top-[50%];
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -27,7 +27,7 @@
 }
 
 .app-login-card {
-  @apply flex flex-col gap-5 p-10 bg-white;
+  @apply flex flex-col gap-5 p-10 bg-white  lg:min-w-[25rem];
   font-family: "Arvo", serif;
   border: 2px solid #001429;
   box-shadow: -2px 4px 0px #001429;
