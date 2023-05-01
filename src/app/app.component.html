@@ -1,4 +1,7 @@
 <div class="app-container">
-  <candy-header *ngIf="!auth.isLoggedIn"></candy-header>
-  <router-outlet></router-outlet>
+  <candy-header *ngIf="auth.isLoggedIn"></candy-header>
+  <div class="mb-32">
+    <router-outlet></router-outlet>
+  </div>
+  <candy-bottom-nav *ngIf="auth.isLoggedIn" class="xsm:block lg:hidden"></candy-bottom-nav>
 </div>

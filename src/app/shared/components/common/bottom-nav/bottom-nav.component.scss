@@ -1,0 +1,11 @@
+@import "src/assets/styles/library.scss";
+.active {
+  @apply  bg-red-50 border-t-primary border-t-4;
+  .icon {
+    @apply text-primary;
+  }
+}
+.nav-bar {
+  border-top: 2px solid $primary;
+  @apply fixed bottom-0 left-0 w-full bg-slate-50 shadow-2xl;
+}

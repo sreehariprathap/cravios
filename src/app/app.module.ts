@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { LoaderComponent } from './shared/loader/loader.component';
 import { HeaderComponent } from './shared/components/common/header/header.component';
+import { BottomNavComponent } from './shared/components/common/bottom-nav/bottom-nav.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { HeaderComponent } from './shared/components/common/header/header.compon
     SharedModule,
     LoaderComponent,
     HeaderComponent,
+    BottomNavComponent
   ],
   exports: [SharedModule],
   providers: [],

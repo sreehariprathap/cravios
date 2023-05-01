@@ -1,0 +1,12 @@
+@import "src/assets/styles/library.scss";
+
+.brand-card {
+  border: 2px solid $dark-one;
+  border-radius: 24px;
+  box-shadow: -2px 3px 0px $dark-one;
+  @apply aspect-square object-cover xsm:w-24 md:w-52 lg:w-[14rem];
+  &:hover {
+    @apply transition duration-200;
+    box-shadow: -4px 6px 0px $dark-one;
+  }
+}

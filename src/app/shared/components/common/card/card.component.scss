@@ -12,13 +12,13 @@
 
   background: #ffffff;
 
-  border: 2px solid #001429;
-  box-shadow: -2px 4px 0px #001429;
+  border: 2px solid $dark-one;
+  box-shadow: -2px 4px 0px $dark-one;
   border-radius: 24px;
 
   &:hover {
     @apply transition duration-200;
-    box-shadow: -4px 6px 0px #001429;
+    box-shadow: -4px 6px 0px $dark-one;
   }
 
   flex: none;
@@ -28,7 +28,7 @@
 
 .app-card-image {
   @apply border flex justify-center items-center bg-blue-200;
-  border: 2px solid #001429;
+  border: 2px solid $dark-one;
   border-radius: 24px;
   height: 17rem;
   overflow: hidden;

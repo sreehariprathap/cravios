@@ -1,0 +1,10 @@
+@import "src/assets/styles/library.scss";
+
+.category-item {
+  @apply bg-blue-50 transition duration-200 hover:bg-blue-200 rounded-full w-28 h-28 flex justify-center items-center;
+  font-family: "Arvo", serif;
+  &:hover {
+    border: 3px solid $dark-one;
+  }
+}
+

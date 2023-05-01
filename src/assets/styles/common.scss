@@ -16,19 +16,19 @@ body::-webkit-scrollbar-track {
   align-items: center;
   padding: 8px 16px;
 
-  border: 2px solid #001429;
-  box-shadow: -1px 2px 0px #001429;
+  border: 2px solid $dark-one;
+  box-shadow: -1px 2px 0px $dark-one;
   border-radius: 24px;
 
   &:hover {
     @apply transition duration-200;
-    box-shadow: -2px 4px 0px #001429;
-    border: 2px solid #001429;
+    box-shadow: -2px 4px 0px $dark-one;
+    border: 2px solid $dark-one;
   }
   &:focus {
     @apply transition duration-200;
-    box-shadow: -2px 4px 0px #001429;
-    border: 2px solid #001429;
+    box-shadow: -2px 4px 0px $dark-one;
+    border: 2px solid $dark-one;
     outline: none;
   }
 
@@ -55,10 +55,10 @@ body::-webkit-scrollbar-track {
 }
 
 .app-nav-link {
-  @apply btn-wide py-2 px-2 rounded-lg text-center min-w-[20rem];
-  border: 2px solid #001429;
+  @apply btn-wide py-2 px-2 rounded-lg text-center min-w-[20rem] flex justify-center items-center;
+  border: 2px solid $primary;
   &:hover {
     @apply transition duration-200;
-    box-shadow: -2px 4px 0px #001429;
+    box-shadow: -2px 4px 0px $primary;
   }
 }

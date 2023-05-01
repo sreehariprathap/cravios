@@ -1,0 +1,22 @@
+<div class="p-2 mx-3">
+  <div
+    class=" flex gap-4 overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-track-base-100 scrollbar-thumb-primary pb-3"
+  >
+    <candy-quick-categories
+      *ngFor="let category of categories"
+      [category]="category"
+    ></candy-quick-categories>
+  </div>
+  <h1 class="app-title">Offers</h1>
+  <div class="carousel rounded-box gap-1 overflow-y-scroll py-2">
+    <candy-ads *ngFor="let image of images" [imageUrl]="image"></candy-ads>
+  </div>
+  <h1 class="app-title">Brands</h1>
+  <div class="flex gap-3 flex-wrap py-2">
+    <candy-brand-card *ngFor="let brand of brands" [brand]="brand"></candy-brand-card>
+  </div>
+  <h1 class="app-title">Trending</h1>
+  <div class="flex gap-3 flex-wrap py-2">
+    <candy-brand-card *ngFor="let brand of brands" [brand]="brand"></candy-brand-card>
+  </div>
+</div>

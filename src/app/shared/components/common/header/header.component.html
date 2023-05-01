@@ -1,11 +1,25 @@
 <nav class="bg-slate-50 flex flex-col p-2 sticky top-0 navbar">
   <div class="flex justify-between w-full">
     <div class="menu-bar" (click)="toggleMenu()">
-      <fa-icon [icon]="faBars" class="fa-2x"></fa-icon>
+      <img
+        src="assets/icons/app-icons/menu1.png"
+        class="w-8 aspect-square"
+        alt=""
+      />
     </div>
     <cravios-logo></cravios-logo>
     <div class="btn btn-ghost" (click)="toggleCart()">
-      <fa-icon [icon]="faBagShopping" class="fa-2x"></fa-icon>
+      <div class="indicator">
+        <span
+          class="indicator-item indicator-bottom indicator-end badge badge-secondary"
+          >3</span
+        >
+        <img
+          src="assets/icons/app-icons/cart.png"
+          class="w-8 aspect-square"
+          alt=""
+        />
+      </div>
     </div>
   </div>
   <ul
@@ -13,23 +27,25 @@
     *ngIf="isMenuVisible"
   >
     <li class="app-nav-link">
-      <a href="" class="app-link">Trending</a>
+      <img src="assets/icons/navbar/home.png" alt="" class="w-6 mb-1 mr-2" />
+      <a href="" class="app-link">Home </a>
     </li>
     <li class="app-nav-link">
-      <a href="" class="app-link">New</a>
+      <img src="assets/icons/navbar/orders.png" alt="" class="w-6 mb-1 mr-2" />
+      <a href="" class="app-link">Orders</a>
     </li>
     <li class="app-nav-link">
-      <a href="" class="app-link">Best</a>
+      <img
+        src="assets/icons/navbar/favorite.png"
+        alt=""
+        class="w-6 mb-1 mr-2"
+      />
+      <a href="" class="app-link">Favorites</a>
     </li>
     <li class="app-nav-link">
+      <img src="assets/icons/navbar/profile.png" alt="" class="w-6 mb-1 mr-2" />
       <a href="" class="app-link">Profile</a>
     </li>
-    <li class="btn-error app-nav-link">
-      <a href="" class="app-link">Logout</a>
-    </li>
   </ul>
-  <div
-    class="cart-dropdown"
-    *ngIf="isCartVisible"
-  ></div>
+  <div class="cart-dropdown" *ngIf="isCartVisible"></div>
 </nav>

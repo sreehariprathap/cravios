@@ -1,0 +1,12 @@
+@import "src/assets/styles/library.scss";
+
+.image-card {
+  @apply xsm:rounded-md lg:rounded-xl border-black  md:w-96 lg:w-[35rem] 2xl:w-[55rem];
+  border: 2px solid $dark-one;
+  box-shadow: -2px 4px 0px $dark-one;
+
+  &:hover {
+    @apply transition duration-200;
+    box-shadow: -4px 6px 0px $dark-one;
+  }
+}

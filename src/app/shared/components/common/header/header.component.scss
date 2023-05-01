@@ -1,9 +1,9 @@
 @import "src/assets/styles/library.scss";
 .navbar {
-  border-bottom: 2px solid #001429;
+  border-bottom: 2px solid $dark-one;
   &:hover {
     @apply transition duration-200;
-    box-shadow: -2px 4px 0px #001429;
+    box-shadow: -2px 4px 0px $dark-one;
   }
 }
 .menu-dropdown {
