@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { products } from 'src/app/core/constants/app.constants';
 
 @Component({
   selector: 'candy-home',
@@ -83,9 +84,14 @@ export class HomeComponent implements OnInit {
     { name: 'Oreo', image: 'assets/images/brands/oreo.webp', link: '' },
     { name: 'Cadbury', image: 'assets/images/brands/cadbury.png', link: '' },
     { name: 'Haagen-Dazs', image: 'assets/images/brands/dazs.jpg', link: '' },
-    { name: 'Dunkin donuts', image: 'assets/images/brands/dunkin.jpg', link: '' },
+    {
+      name: 'Dunkin donuts',
+      image: 'assets/images/brands/dunkin.jpg',
+      link: '',
+    },
     { name: 'Nestle', image: 'assets/images/brands/nastle.jpg', link: '' },
   ];
+  products = products;
   constructor() {}
 
   ngOnInit(): void {}

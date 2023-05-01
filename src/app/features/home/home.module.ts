@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AdsComponent } from 'src/app/shared/components/ads/ads.component';
 import { QuickCategoriesComponent } from 'src/app/shared/components/quick-categories/quick-categories.component';
 import { BrandCardComponent } from 'src/app/shared/components/brand-card/brand-card.component';
+import { CardComponent } from 'src/app/shared/components/common/card/card.component';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -15,6 +16,7 @@ import { BrandCardComponent } from 'src/app/shared/components/brand-card/brand-c
     AdsComponent,
     QuickCategoriesComponent,
     BrandCardComponent,
+    CardComponent
   ],
 })
 export class HomeModule {}
